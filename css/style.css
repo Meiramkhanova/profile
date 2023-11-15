@@ -81,6 +81,13 @@ nav ul li a:hover::after{
 	color: #55A630;
 }
 
+.about-col-2 p{
+	margin-top: 25px;
+}
+
+.about-col-2 p span{
+	color: #55A630;
+}
 
 /* !     About section */
 #about{
@@ -115,7 +122,7 @@ nav ul li a:hover::after{
 
 .tab-titles{
 	display: flex;
-	margin:20px 0 40px;
+	margin:20px 0 30px;
 }
 
 .tab-links{
