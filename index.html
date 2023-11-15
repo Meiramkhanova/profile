@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<div id="header">
+		<div class="container">
+			<nav>
+				<a href="#header"><img src="assets/logo.png" class="logo"></a>
+				<ul id="sidemenu">
+					<li><a href="#header">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<i class="fas fa-times" onclick="closemenu()"></i>
+				</ul>
+				<i class="fas fa-bars" onclick="openmenu()"></i>
+			</nav>
+
+			<div class="header-text">
+				<p>Hello, World!</p>
+				<h1>My name is <span>Adina</span>. <br> Nice to meet u!</h1>
+			</div>
+		</div>
+	</div>
+
+<!-- About -->
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="assets/adina.jpg" alt="girl">
+				</div>
+				<div class="about-col-2">
+					<h1 class="sub-title">About me</h1>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim ex exercitationem cum blanditiis voluptates, recusandae facere perspiciatis consequatur inventore. Officiis eum ipsam voluptatum ipsa cumque.</p>
+
+					<div class="tab-titles">
+						<p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+						<p class="tab-links" onclick="openTab('experience')">Experience</p>
+						<p class="tab-links" onclick="openTab('education')">Education</p>
+					</div>
+
+					<div class="tab-contents active-tab" id="skills">
+						<ul>
+							<li><span>HTML, CSS , JS</span><br>Designing Interfaces, Responsible Design</li>
+							<li><span>JavaScript Library&Frameworks</span><br>GSAP, React</li>
+							<li><span>System for Version Control</span><br>Git</li>
+						</ul>
+					</div>
+
+					<div class="tab-contents" id="experience">
+						<ul>
+							<li><span>HTML, CSS , JS</span><br>Designing Interfaces, Responsible Design</li>
+							<li><span>JavaScript Library&Frameworks</span><br>GSAP, React</li>
+							<li><span>System for Version Control</span><br>Git</li>
+						</ul>
+					</div>
+
+					<div class="tab-contents" id="education">
+						<ul>
+							<li><span>2021-2025</span><br>Information Technology at Narxoz University</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<!--Portfolio -->
+	<div id="portfolio">
+		<div class="container">
+			<h1 class="sub-title">My Work</h1>
+			<div class="work-list">
+				<div class="work">
+					<img src="assets/theGsap.png" alt="">
+					<div class="layer">
+						<h3>JucieFuseTeaAnimation</h3>
+						<p>Powered by the GSAP, this project introduces an immersive experience where tea ingredients gracefully blend and transform</p>
+						<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="assets/shopStore.png" alt="">
+					<div class="layer">
+						<h3>TheShopStore</h3>
+						<p>Project leverages local storage to keep track of users' shopping preferences</p>
+						<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="assets/quote.png" alt="">
+					<div class="layer">
+						<h3>Random-quote-machine</h3>
+						<p>Randomly generated quotes and aesthetically pleasing color scheme</p>
+						<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<a href="#" class="btn">See More</a>
+		</div>
+	</div>
+
+	<!-- contact -->
+
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-left">
+					<h1 class="sub-title">Contact me</h1>
+					<p><i class="fa-solid fa-paper-plane"></i> adinoone04@gmail.com</p>
+					<div class="social-icons">
+						<a href="https://www.linkedin.com/in/adinaone/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="https://www.instagram.com/adinameiramhanova/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://github.com/Meiramkhanova" target="_blank"><i class="fa-brands fa-github"></i></a>
+					</div>
+					<a href="/assets/Adina_resume.pdf" download="" class="btn btn2">Download CV</a>
+				</div>
+				<div class="contact-right">
+					<form>
+						<input type="text" id="name" placeholder="Your Name" required>
+						<input type="email" id="email" placeholder="Your Email" required>
+						<textarea id="message" rows="6" placeholder="Your Message"></textarea>
+						<button type="submit" class="btn btn2">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer"></div>
+	</div>
+	
+
+	<script src="js/index.js"></script>
+</body>
+</html>
